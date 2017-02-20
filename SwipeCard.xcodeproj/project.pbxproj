@@ -12,6 +12,9 @@
 		04BA98D91E52EA80008E30AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA98D71E52EA80008E30AB /* Main.storyboard */; };
 		04BA98DB1E52EA80008E30AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA98DA1E52EA80008E30AB /* Assets.xcassets */; };
 		04BA98DE1E52EA80008E30AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA98DC1E52EA80008E30AB /* LaunchScreen.storyboard */; };
+		04BA98E61E52EBBA008E30AB /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA98E51E52EBBA008E30AB /* CardsCollectionViewCell.swift */; };
+		04BA98E81E52EBD8008E30AB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA98E71E52EBD8008E30AB /* ViewModel.swift */; };
+		04C42D341E54585900309637 /* CollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42D331E54585900309637 /* CollectionFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		04BA98DA1E52EA80008E30AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA98DD1E52EA80008E30AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BA98DF1E52EA80008E30AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BA98E51E52EBBA008E30AB /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
+		04BA98E71E52EBD8008E30AB /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		04C42D331E54585900309637 /* CollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				04BA98D31E52EA80008E30AB /* AppDelegate.swift */,
 				04BA98D51E52EA80008E30AB /* ViewController.swift */,
+				04BA98E51E52EBBA008E30AB /* CardsCollectionViewCell.swift */,
+				04BA98E71E52EBD8008E30AB /* ViewModel.swift */,
+				04C42D331E54585900309637 /* CollectionFlowLayout.swift */,
 				04BA98D71E52EA80008E30AB /* Main.storyboard */,
 				04BA98DA1E52EA80008E30AB /* Assets.xcassets */,
 				04BA98DC1E52EA80008E30AB /* LaunchScreen.storyboard */,
@@ -96,7 +105,8 @@
 				TargetAttributes = {
 					04BA98CF1E52EA80008E30AB = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 8MA7W4B7Y3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,6 +148,9 @@
 			files = (
 				04BA98D61E52EA80008E30AB /* ViewController.swift in Sources */,
 				04BA98D41E52EA80008E30AB /* AppDelegate.swift in Sources */,
+				04BA98E81E52EBD8008E30AB /* ViewModel.swift in Sources */,
+				04BA98E61E52EBBA008E30AB /* CardsCollectionViewCell.swift in Sources */,
+				04C42D341E54585900309637 /* CollectionFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +273,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8MA7W4B7Y3;
 				INFOPLIST_FILE = SwipeCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codetoart.ios.SwipeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e5540896-d1ad-4a6c-8846-c3773326e0c9";
+				PROVISIONING_PROFILE_SPECIFIER = "wildcard dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +290,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8MA7W4B7Y3;
 				INFOPLIST_FILE = SwipeCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codetoart.ios.SwipeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e5540896-d1ad-4a6c-8846-c3773326e0c9";
+				PROVISIONING_PROFILE_SPECIFIER = "wildcard dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +322,7 @@
 				04BA98E41E52EA80008E30AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
